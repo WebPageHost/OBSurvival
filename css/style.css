@@ -1,0 +1,546 @@
+/*
+ * Globals
+ */
+ 
+@font-face {
+    font-family: 'annifontitalic';
+    src: url('../fonts/annifont-webfont.eot');
+    src: url('../fonts/annifont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/annifont-webfont.woff2') format('woff2'),
+         url('../fonts/annifont-webfont.woff') format('woff'),
+         url('../fonts/annifont-webfont.ttf') format('truetype'),
+         url('../fonts/annifont-webfont.svg#annifontitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration:none;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+body {font-family: 'OpenSansRegular'; color:#414140;}
+strong {font-family: 'OpenSansbold'; font-weight:normal;}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.cover-text {}
+.cover-heading {font-family: 'annifontitalic';}
+.slide2-title2 {line-height: 1.45; font-family: 'OpenSansSemibold';}
+.slide4-title-wrap { display:table;width:100%;}
+.slide4-title4 { font-size:30px;text-align: left;line-height: 1.45; }
+.slogan {font-family: 'annifontitalic'; margin-bottom: 0;}
+.arrow-container { position:absolute; right:0; bottom:20px;}
+.carousel-control {opacity: 1;text-shadow: none;}
+.carousel-control img {  max-width: 100%;}
+.carousel-control:hover {opacity: .75;}
+.carousel-control.left {}
+.carousel-control.right {}
+.refer-obvisit { position:static;}
+.home-icon {  display: inline-block;  position: absolute;  z-index: 500;}
+.home-arrow { overflow:hidden; display: block; position:relative; float:right;}
+.home-arrow img { position:absolute; left:0; top:0;}
+.medical-assistant-arrow { overflow:hidden; display: block; position:relative; float:right;}
+.medical-assistant-arrow img { position:absolute; left:0; top:0;}
+
+
+.carousel,
+.carousel-inner {  height: 100%;  min-height: 100%;}
+.carousel-inner>.item {  height: 100%;  min-height: 100%; text-align:center;}
+.carousel-inner>.item.welcome {  background-color: #3a3539;color: #fff;}
+.carousel-control.right,
+.carousel-control.left {background: none;}
+.carousel-control.right { float:right;margin-right: 3%;}
+.carousel-control.left { float:left;margin-left: 3%;}
+#newObVisit .slide-3 .carousel-control.left {  margin-left: 3%;}
+a.home-arrow.right.carousel-control,
+a.medical-assistant-arrow.right.carousel-control {  margin-right: 12%;}
+a.home-arrow.right.carousel-control {margin-top: -90px;}
+
+#ageBelow34 .slide-1 { background:url(../images/less-than-34.jpg) no-repeat left center;}
+#ageBelow34 .age-main-title {  margin: 0 0 25px;}
+#ageBelow34 .mastfoot { bottom:30px;}
+
+#ageAbove34 .slide-1 { background:url(../images/more-than-34.jpg) no-repeat left center;}
+#ageAbove34 .age-main-title {  margin: 0 0 25px;}
+#ageAbove34 .mastfoot { bottom:30px;}
+
+#transferCare .slide-1 { background:url(../images/transfer-of-care.jpg) no-repeat left center;}
+#transferCare .slide-2 { background:url(../images/transfer-of-care-2.jpg) no-repeat left center;}
+#transferCare .age-content { text-align: center;}
+#transferCare .age-main-title {  margin: 0 0 25px;}
+#transferCare .mastfoot { bottom:30px;}
+
+#geneticAbnormality .slide-1 { background:url(../images/genetic-abnormality.jpg) no-repeat left center;}
+#geneticAbnormality .age-main-title {  margin: 0 0 25px;}
+#geneticAbnormality .mastfoot { bottom:30px;}
+
+#southeastAsian .slide-1 { background:url(../images/southeastasian.jpg) no-repeat left center;}
+#southeastAsian .age-main-title {  margin: 0 0 25px;}
+#southeastAsian .mastfoot { bottom:30px;}
+#cajunAsjkenazi .slide-1 { background:url(../images/cajun.jpg) no-repeat left center;}
+#cajunAsjkenazi .age-main-title {  margin: 0 0 25px;}
+#cajunAsjkenazi .mastfoot { bottom:30px;}
+
+#obesePatient .slide-1 { background:url(../images/obesepatient.jpg) no-repeat left center;}
+#obesePatient .age-main-title {  margin: 0 0 25px;}
+#obesePatient .mastfoot { bottom:30px;}
+
+.new-ob-labs ol {  width: 270px;  margin: auto;}
+
+.blank-circle-wrap .col-md-4,
+.blank-circle-wrap .col-md-8 { }
+
+.obvisit-wrap { position:relative;}
+.obvisit-wrap div { width:185px; height:168px; position:absolute;}
+.obvisit-wrap div:hover { opacity:.92;}
+.obvisit-wrap div.obvisit:hover { opacity:1;}
+.obvisit-wrap h3 {display: table;  width: 100%;  height: 100%;  position: absolute;  top: 0;  left: 0;  margin: 0;font-family: 'OpenSansSemiBold'; font-size:30px; color:#fff;}
+.obvisit-wrap h3 a,
+.obvisit-wrap h3 span {  display: table-cell;  vertical-align: middle;  width: 100%;  height: 100%;  position: static; float: none !important;  margin: 0 !important;text-shadow: none;}
+.obvisit-wrap h3 a:hover,
+.obvisit-wrap h3 span:hover { opacity:1 !important;}
+.obvisit-wrap .obvisit h3 {font-size:35px;color: #414140;font-family: 'OpenSansBold'; }
+.obvisit-wrap .obvisit h3 span { font-size:35px;}
+.obvisit-wrap .blank-aquare { width:100%;height: 100%;}
+.square-purple {left: 50%; top: 0;  margin-left: -92px;box-shadow: 0px -12px 48px rgba(0, 0, 0, 0.75);}
+.square-dark-green {left: 0; top: 168px;box-shadow: -12px 0 48px rgba(0, 0, 0, 0.75);}
+.obvisit {left: 50%;  top: 168px;  margin-left: -92px;}
+.square-blue {right: 0;  top: 168px;box-shadow: 12px 0 48px rgba(0, 0, 0, 0.75);}
+.square-green {left: 50%; bottom: 0;  margin-left: -92px;box-shadow: 0px 12px 48px rgba(0, 0, 0, 0.75);}
+
+.elevenrhirteenweek .slide-1 { background:url(../images/1113weeks.jpg) no-repeat left center;}
+.elevenrhirteenweek .mastfoot { bottom: 30px;}
+
+.fifteen20weeks.slide-2 { background:url(../images/1520weeks.jpg) no-repeat left center;}
+.fifteen20weeks .mastfoot { bottom: 30px;}
+
+.twenty4twentyeightweeks.slide-4 { background:url(../images/2428weeks.jpg) no-repeat left center;}
+.twenty4twentyeightweeks .mastfoot { bottom: 30px;}
+
+.thirtyfourthirtyeightweeks.slide-2 { background:url(../images/3438weeks.jpg) no-repeat left center;}
+.thirtyfourthirtyeightweeks .mastfoot { bottom: 30px;}
+
+.ob-selection-box { position:relative;font-family: 'OpenSansBold';}
+.ob-selection-box a:hover { text-decoration:none;}
+.new-ob-visit,
+.ob-visit { position: absolute; text-align:center; width:100%;text-transform: uppercase;}
+.new-ob-visit a, .ob-visit a { color:#fff; height:105px;display: inline-block;  line-height: 105px;}
+.new-ob-visit a { width:596px;}
+.ob-visit a {width:588px;}
+.new-ob-visit a { background:url(../images/new-ob-visit.jpg) no-repeat;background-size: 100% auto;}
+.ob-visit a {background:url(../images/ob-visit.jpg) no-repeat;background-size: 100% auto;}
+.new-ob-visit a:hover,
+.ob-visit a:hover { opacity: .92;}
+
+.circle-text {  display: table;  height: 271px;  width: 270px; }
+.circle-text h3 {  display: table-cell;  vertical-align: middle;font-family: 'OpenSansSemibold';}
+
+
+.arrow-titles > div { position:relative;z-index: 500;}
+.arrow-titles > div:hover {opacity: .92;}
+.arrow-titles img { margin-bottom:0;}
+.arrow-titles .arrow-text {  display: table;  width: 100%;  position: absolute;  height: 273px;  left: 0;  top: 0;}
+.arrow-titles .arrow-text h3 {  font-size: 30px;  display: table-cell;  vertical-align: middle; cursor:pointer;}
+.arrow-titles .arrow-text h3 a {  color: #414140;}
+.arrow-brown,
+.arrow-red {padding-top: 14px;}
+.arrow-titles .row {  margin-right: -10px;  margin-left: -10px;}
+
+.age-main-title { font-size:54px;font-family: 'OpenSansBold';}
+.age-content { text-align:left; font-size:31px;}
+#ageBelow34 .age-content,
+#ageAbove34 .age-content { position: relative;  z-index: 500;}
+#geneticAbnormality .age-content,
+#southeastAsian .age-content,
+#cajunAsjkenazi .age-content,
+#obesePatient .age-content,
+#ObVisit .age-content {  position: relative;  z-index: 500;}
+.link-highlight {  background: #414140;  color: #fff;  padding: 0px 7px;}
+.link-highlight:hover { opacity:.92;}
+
+.care-main-title { font-family: 'OpenSansBold';}
+.rotated-square-wrap { font-family: 'OpenSansSemibold'; color:#000;position: relative;  z-index: 500;}
+.rotated-square-wrap > div > div {  position: relative;}
+.rotated-square-wrap > div > div:hover { opacity:.92;}
+.rotated-square {  position: absolute;  top: 0;  left: 0;  width: 100%;display: table;z-index: 500;}
+.rotated-square-content {  display: table-cell;  vertical-align: middle;  text-align: center; font-size:14px; cursor: pointer;}
+.rotated-square-content a { color:#000;}
+
+.mastfoot { position: fixed;width: 100%;height: 83px;}
+#newObVisit .slide-3 .mastfoot {max-width:40px; left: 10px;}
+#ObVisit .slide-3 .mastfoot {  z-index: -1;}
+#myCarousel .mastfoot {z-index: 500;}
+
+/* optional vertical slide effect for some slides */
+.vertical .carousel-inner {
+  height: 100%;
+}
+
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 400px;
+}
+
+.carousel.vertical .prev {
+  top: -400px;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -400px;
+}
+
+.carousel.vertical .active.right {
+  top: 400px;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}
+
+.newobcircle {}
+
+
+/* responsiveness */
+@media (min-width: 320px) {
+	.slide-content-wrap {  display: table;  height: 100%;  min-height: 100%;  margin: auto;}
+	.slide-content {  display: table-cell;  vertical-align: middle;}
+	.cover-heading {  font-size: 28px;}
+	.slogan {font-size:16px;}
+	.home-circle,
+	.blank-circle {  max-width: 60%;margin:0 0 20px;}
+	.blank-circle {margin-bottom: -192px;}
+	.home-arrow { width:31px; height:68px; }
+	.home-arrow img { width:31px;}
+	.medical-assistant-arrow {width:31px; height:68px; }
+	.medical-assistant-arrow img { width:31px;}
+	.mastfoot { bottom: 10px;}
+	.slide2-title2 { font-size:26px; margin-top:0;}
+	.cover-heading {margin-bottom: 10px;}
+	.new-ob-visit, .ob-visit { font-size:22px; }
+	.new-ob-visit {  top: 25px;  left: 0;}
+	.new-ob-visit a {  width: 284px; height:50px;line-height: 50px;  font-size: 22px;}
+	.ob-visit {  top: 107px;  left: 0;}
+	.ob-visit a {  margin-right: -46px;width: 280px;height:50px;line-height: 50px;}
+	.carousel-control {width:31px; height:68px;}
+	.home-icon {  width: 44px;  height: 29px; left: 15px;  top: 15px;  }
+	.circle-text {  display: table;  height: 174px;  width: 174px;  margin: auto;}
+	.circle-text h3 {  font-size: 22px;  display: table-cell;  vertical-align: middle;font-family: 'OpenSansSemibold';}
+	.slide4-title4 { font-size:16px;line-height: 1.45;width: 190px;  margin: auto;}
+	.age-content { font-size:12px;}
+	.age-main-title {  font-size: 24px;}
+	#ageBelow34 .slide-1,
+	#ageAbove34 .slide-1,
+	#transferCare .slide-1,
+	#transferCare .slide-2,
+	#geneticAbnormality .slide-1,
+	#southeastAsian .slide-1,
+	#cajunAsjkenazi .slide-1,
+	#obesePatient .slide-1,
+	.elevenrhirteenweek .slide-1,
+	.fifteen20weeks.slide-2,
+	.twenty4twentyeightweeks .age-content,
+	.thirtyfourthirtyeightweeks.slide-2,
+	.twenty4twentyeightweeks.slide-4 { background-size: 28px auto;}
+	.care-main-title { font-size:24px;}
+	.rotated-square-wrap {  width: 276px;}
+	.rotated-square-wrap > div > .col-md-6 { width: 50%;float: left;}
+	.rotated-square { height: 132px;}
+	.rotated-square-content {font-size: 10px;}
+	.obvisit-wrap {  margin: auto;  width: 285px;  height: 234px;}
+	.obvisit-wrap div {  width: 95px;  height: 78px;}
+	.square-purple { margin-left: -47.5px;}
+	.square-dark-green { top: 78px;}
+	.obvisit {  top: 78px;  margin-left: -47.5px;}
+	.obvisit-wrap .obvisit h3 span {  font-size: 20px;}
+	.square-blue {  top: 78px;}
+	.square-green {  margin-left: -47.5px;}
+	.obvisit-wrap h3 a,
+	.obvisit-wrap h3 span {font-size: 20px;}
+	.arrow-titles {  width: 150px;  margin: auto;}
+	.arrow-main-title { font-size:18px;font-family: 'OpenSansBold';  margin-bottom: 8px; margin-top:0;}
+	.arrow-titles {  width: 150px;  margin: auto;}
+	.arrow-titles .arrow-text h3 {  font-size: 12px;  display: table-cell;  vertical-align: middle;}
+	.arrow-titles .arrow-text {  display: table;  width: 100%;  position: absolute;  height: 57px;  left: 0;  top: 0;}
+	.arrow-blue +.arrow-text {  height: 79px;}
+	.arrow-blue +.arrow-text h3 a {padding-right: 20px;}
+	.arrow-brown +.arrow-text {  height: 98px;}
+	.arrow-brown +.arrow-text h3 a { padding-left: 30px;}
+	.arrow-green +.arrow-text {  height: 79px;}
+	.arrow-green +.arrow-text h3 a {  padding-right: 20px;}
+	.arrow-red +.arrow-text {  height: 97px;}
+	.arrow-red +.arrow-text h3 a {  padding-left: 10px;}
+	.link-highlight { font-size: 12px;}
+	}
+
+@media (min-width: 480px) {
+	.arrow-blue +.arrow-text {  height: 107px;}
+	.arrow-green +.arrow-text {  height: 106px;}
+	.arrow-titles img { padding-top: 14px;}
+	.arrow-titles {  width: 300px;}
+	.arrow-titles .col-md-6 {width: 50%; float:left;}
+	.circle-text {height: 92px;  width: 170px;}
+	.circle-text h3 { font-size: 12px;}
+	.slide-content .col-md-4 {   width: 33.33333333%; float:left;}
+	.slide-content .col-md-8 {  width: 66.66666667%; float:left;}
+	.ob-selection-box { width: 334px;}
+	.new-ob-visit {top: 26px;}
+	.new-ob-visit a {  margin-left: -4px;width: 296px;  height: 52px;  line-height: 52px;}
+	.ob-visit { top: 112px;}
+	.ob-visit a {margin-right: -46px;  width: 292px;  height: 52px;  line-height: 52px;}
+	#myCarousel .col-md-4 {width: 33.33333333%; float:left;}
+	#myCarousel .col-md-8 {  width: 66.66666667%;float:left;}
+	.home-circle, .blank-circle {  max-width: 70%;  float: right;}
+	.newobcircle {height: 276px;}
+	.newobcircle > div {display: table;  height: 100%;}
+	.newobcircle > div > div {display: table-cell;vertical-align: middle;}
+	.newobcircle .circle-text {height: 119px;  width: 170px;  text-align: right;  padding-right: 21px;}
+	}
+
+@media (min-width: 568px) {
+	.circle-text {  height: 113px;  width: 206px;}
+	.circle-text h3 {  font-size: 15px;}
+	.arrow-titles {  width: 540px;}
+	.arrow-titles .arrow-text h3 {  font-size: 22px;}
+	.arrow-blue +.arrow-text {  height: 172px;}
+	.arrow-brown +.arrow-text {  height: 156px;}
+	.arrow-green +.arrow-text {  height: 172px;}
+	.arrow-red +.arrow-text {  height: 157px;}
+	.age-main-title {  font-size: 44px;}
+	.age-content {  font-size: 18px;}
+	#ageBelow34 .slide-1, #ageAbove34 .slide-1, #transferCare .slide-1, #transferCare .slide-2, #geneticAbnormality .slide-1, #southeastAsian .slide-1, #cajunAsjkenazi .slide-1, #obesePatient .slide-1, .elevenrhirteenweek .slide-1, .fifteen20weeks.slide-2, .twenty4twentyeightweeks .age-content, .thirtyfourthirtyeightweeks.slide-2, .twenty4twentyeightweeks.slide-4 {
+		 background-size: 78px auto;}
+	.link-highlight { font-size: 18px;}
+	.cover-heading {  margin-top: 34px;}
+	.newobcircle .circle-text { padding-right: 12px;}
+	
+	}
+
+@media (min-width: 600px) {
+	.home-circle, .blank-circle { max-width: 100%;  float: right;}
+	.blank-circle {  margin-bottom: -170px;}
+	.circle-text {  height: 170px;  width: 170px;}
+	.circle-text h3 {  font-size: 22px;}
+	.slide4-title4 { font-size: 30px;width: 100%;}
+	.slide-content .col-md-4 {}
+	.slide-content .col-md-8 {}
+	#myCarousel .col-md-4 {  }
+	#myCarousel .col-md-8 { }
+	.slide2-title2 {  font-size: 40px;  margin-top: 0;}
+	.age-content {  font-size: 18px;}
+	.care-main-title {  font-size: 44px;}
+	.rotated-square-wrap {  width: 516px;}
+	.rotated-square {  height: 234px;}
+	.rotated-square-content {  font-size: 14px;}
+	.age-main-title {  font-size: 34px;}
+	.age-content {  width: 434px;  margin: auto;}
+	.arrow-main-title {  font-size: 34px;}
+	.obvisit-wrap {  margin: auto;  width: 555px;  height: 504px;}
+	.obvisit-wrap div {  width: 185px;  height: 168px;}
+	.square-purple {  margin-left: -92px;}
+	.obvisit-wrap h3 a, .obvisit-wrap h3 span {  font-size: 30px;}
+	.square-dark-green {  top: 168px;}
+	.obvisit {  top: 168px;  margin-left: -92px;}
+	.square-blue {  top: 168px;}
+	.square-green {  margin-left: -92px;}
+	.link-highlight {  font-size: 18px;}
+	.obvisit-wrap .obvisit h3 span { font-size: 35px;}
+	.cover-heading {  margin-top: 68px;}
+	.newobcircle .circle-text {  height: 170px;padding-right: 15px;}
+	.newobcircle {  height: 516px;}
+	}
+	
+@media (min-width: 768px) {
+	.cover-heading {  font-size: 44px;}
+	.circle-text {  height: 190px;  width: 190px;}
+	.blank-circle {  margin-bottom: -226px;}
+	.circle-text {  height: 226px;  width: 226px;}
+	.circle-text h3 {  font-size: 30px;}
+	.arrow-brown, .arrow-red {  padding-top: 22px !important;}
+	.arrow-brown +.arrow-text {  height: 170px;}
+	.arrow-red +.arrow-text {  height: 170px;}
+	.age-content {  width: 564px;font-size: 24px;}
+	.age-main-title {  font-size: 44px;}
+	.ob-selection-box {  width: 680px;  margin: auto;}
+	.new-ob-visit a {  margin-left: 0px;  width: 596px;  height: 105px;  line-height: 105px;font-size: 36px;}
+	.new-ob-visit {  top: 53px;}
+	.ob-visit {  top: 228px;}
+	.ob-visit a { margin-left: 46px;  width: 588px;  height: 105px;  line-height: 105px;}
+	.new-ob-visit, .ob-visit {  font-size: 36px;}
+	.link-highlight {  font-size: 24px;}
+	.cover-heading {  margin-top: 105px;}
+	.newobcircle .circle-text {height: 226px; width: 226px;}
+	}
+	
+@media (min-width: 992px) {
+	.fifteen20weeks .age-content {  width: 682px;  margin: auto;}
+	.thirtyfourthirtyeightweeks .age-content {  width: 678px;  margin: auto;}
+	.twenty4twentyeightweeks .age-content {  width: 682px;  margin: auto;}
+	.elevenrhirteenweek .age-content {  width: 678px;  margin: auto;}
+	.obvisit-wrap h3 span { font-size: 20px;}
+	.obvisit-wrap {margin:auto; width:555px; height:504px;}
+	.slide4-title4 {text-align: center;}
+	#southeastAsian .age-content {  width: 678px;  margin: auto;}
+	#obesePatient .age-content {  width: 678px;  margin: auto;}
+	#cajunAsjkenazi .age-content {  width: 678px;  margin: auto;}
+	#geneticAbnormality .age-content {  width: 678px;  margin: auto;}
+	.obvisit-wrap .obvisit h3 span {  font-size: 35px;}
+	.rotated-square {height: 230px; }
+	.rotated-square-wrap {  width: 506px;  margin: auto; }
+	.care-main-title { font-size:46px;}
+	#transferCare .age-content {  width: 678px;  margin: auto;}
+	#ageAbove34 .age-content {  width: 678px;  margin: auto;}
+	#ageBelow34 .slide-1 {  background-size: auto auto;}
+	.age-main-title {font-size: 46px;}
+	.age-content { font-size:31px;}
+	#ageBelow34 .age-content {  width: 678px;  margin: auto;}
+	.new-ob-visit a {  width: 596px;height: 105px;}
+	.ob-visit a {  width: 588px;height: 105px;}
+	.home-circle, .blank-circle {  max-width: 60%;  float: none;}
+	.slide-content-wrap {width: 992px;}
+	.cover-heading { font-size: 44px;margin-top: 0;}
+	.slogan {font-size:21px;}
+	.blank-circle { float:right;}
+	.home-circle,
+	.blank-circle {  max-width: 90%;margin:0;}
+	.blank-circle {margin-bottom: -271px;}
+	.slide-content-wrap {  display: table;  height: 100%;  min-height: 100%;  margin: auto;}
+	.slide-content { display: table-cell;  vertical-align: middle;}
+	.cover-heading-wrap { display:table; width:100%;height: 271px;}
+	.cover-heading-content {display:table-cell; vertical-align:middle;}
+	.medical-assistant-arrow { width:61px; height:128px;}
+	.medical-assistant-arrow img { width:61px;}
+	.mastfoot { bottom: 30px;}
+	.slide2-title-wrap { display:table;height: 271px; width:100%;}
+	.slide2-title2 {font-size:54px;display:table-cell; vertical-align:middle;margin-top:20px;}
+	.cover-heading {margin-bottom: 32px;}
+	.home-arrow:hover img {  top: -139px;}
+	.new-ob-visit, .ob-visit { font-size:36px; }
+	.new-ob-visit {  top: 53px;  left: 0;}
+	.ob-visit {  top: 228px;  left: 0;}
+	.ob-visit a {  margin-right: -46px;}
+	.carousel-control {width:40px; height:83px;}
+	.home-arrow { width:61px; height:128px;}
+	.home-arrow img { width:61px;}
+	.home-icon {  width: 74px;  height: 59px; left: 30px;  top: 20px;  }
+	.circle-text {  display: table;  height: 271px;  width: 270px;  float: right;  margin: 0;}
+	.circle-text h3 {  font-size: 30px;  display: table-cell;  vertical-align: middle;font-family: 'OpenSansSemibold';}
+	.slide4-title4 { font-size:30px;text-align: left;line-height: 1.45; display:table-cell; vertical-align:middle;}
+	.arrow-titles {  width: 768px;}
+	.arrow-main-title { font-size:30px;font-family: 'OpenSansBold';  margin-bottom: 28px; margin-top:0;}
+	.arrow-titles .arrow-text {  display: table;  width: 100%;  position: absolute;  height: 240px;  left: 0;  top: 0;}
+	.arrow-brown, .arrow-red {  padding-top: 30px !important;}
+	.arrow-titles .arrow-text h3 {  font-size: 30px;  display: table-cell;  vertical-align: middle;}
+	.slide4-title-wrap { height: 271px;}
+	.slide4-title4 { display:table-cell; vertical-align:middle;}
+	#ageBelow34 .slide-1, #ageAbove34 .slide-1, #transferCare .slide-1, #transferCare .slide-2, #geneticAbnormality .slide-1, #southeastAsian .slide-1, #cajunAsjkenazi .slide-1, #obesePatient .slide-1, .elevenrhirteenweek .slide-1, .fifteen20weeks.slide-2, .twenty4twentyeightweeks .age-content, .thirtyfourthirtyeightweeks.slide-2, .twenty4twentyeightweeks.slide-4 {
+	  background-size: auto auto;}
+	 .link-highlight { font-size: 31px;}
+	 .cover-heading {  margin-top: 38px;}
+	 .newobcircle .circle-text {width: 270px;height: 270px;  text-align: center;padding-right: 0; float:none; margin:auto;}
+	 .newobcircle .blank-circle { max-width:270px;}
+	}
